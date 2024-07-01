@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sApp - App Landing Page | Login</title>
+    <link rel="shortcut icon" href="./Assets/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/9f6775670c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'custom-blue': '#4d30da',
+                        'custom-purple': '#853be6',
+
+                    },
+                    height: {
+                        '128': '32rem',
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="w-full 
+    mb-20
+    h-128
+    flex
+    items-center
+    justify-center
+    mt-auto
+    relative
+    overflow-hidden
+    z-10
+    bg-[url('https://theme-land.com/sapp/demo/assets/img/bg/accounts.jpg')]
+    bg-cover
+    bg-no-repeat
+    bg-center
+    before:content-['']
+    before:absolute
+    before:inset-0
+    before:block
+    before:bg-gradient-to-br
+    before:from-custom-blue
+    before:to-custom-purple
+    before:opacity-95
+    before:z-[-5]
+">
+<nav class="absolute top-0 w-full z-50">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex space-x-4">
+                <div>
+                    <a href="./Project.html" class="flex items-center py-2 px-2 text-gray-700">
+                        <img src="./Assets/logo-white.png" alt="logo-white">
+                    </a>
+                </div>
+            </div>
+            <div class="nav-side lg:flex text-white hidden items-center gap-9 font-semibold">
+                <div class="container ">
+                    <div class="flex justify-between items-center">
+                        <div class="relative group ">
+                            <a href="#" class="text-lg flex items-center gap-1 justify-center">Home <i
+                                    class="fa-solid fa-angle-down mt-1"></i></a>
+                            <div
+                                class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden group-hover:block">
+                                <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+
+                                    Homepage-1
+                                </a>
+                                <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+
+                                    Homepage-2
+                                </a>
+                                <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+
+                                    Homepage-3
+                                </a>
+                                <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+
+                                    Homepage-4
+                                </a>
+                                <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+
+                                    Homepage-5
+                                </a>
+                                <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+
+                                    Homepage-6
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="text-lg">Features</a>
+                <div class="relative group">
+                    <a href="#" class="text-lg flex items-center gap-1 justify-center">Pages <i
+                            class="fa-solid fa-angle-down mt-1"></i></a></a>
+                    <div
+                        class="absolute left-0 mt-2 w-52 bg-white rounded-md shadow-lg hidden group-hover:block">
+                        <div class="relative group">
+                            <div class="relative inline-block text-left">
+                                <div>
+                                    <button type="button"
+                                        class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                        id="menu-button-5" aria-expanded="true" aria-haspopup="true">
+                                        INNER PAGES
+                                        <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="origin-top-right absolute -right-60 -top-4 mt-2 w-40 bg-white  focus:outline-none hidden z-50"
+                                    id="menu-items-5" role="menu" aria-orientation="vertical"
+                                    aria-labelledby="menu-button-5" tabindex="-1">
+                                    <div class="py-1 pl-3" role="none">
+                                        <a href="#"
+                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                            role="menuitem" tabindex="-1" id="menu-item-0">Pricing</a>
+                                        <a href="#"
+                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                            role="menuitem" tabindex="-1" id="menu-item-1">Download</a>
+                                        <a href="#"
+                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                            role="menuitem" tabindex="-1" id="menu-item-2">Newsletter</a>
+                                        <a href="#"
+                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                            role="menuitem" tabindex="-1" id="menu-item-3">Thank You</a>
+                                        <a href="#"
+                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                            role="menuitem" tabindex="-1" id="menu-item-3">Coming Soon</a>
+                                        <a href="#"
+                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                            role="menuitem" tabindex="-1" id="menu-item-3">404</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="relative inline-block text-left">
+                            <div>
+                                <button type="button"
+                                    class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                    id="menu-button-4" aria-expanded="true" aria-haspopup="true">
+                                    BLOG PAGES
+                                    <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="origin-top-right absolute -right-60 -top-4 mt-2 w-40 bg-white  focus:outline-none hidden z-50"
+                                id="menu-items-4" role="menu" aria-orientation="vertical"
+                                aria-labelledby="menu-button-4" tabindex="-1">
+                                <div class="py-1 pl-2" role="none">
+                                    <a href="./Blog-2-Column.html" target="_blank"
+                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                        role="menuitem" tabindex="-1" id="menu-item-0">Blog-2 Column</a>
+                                    <a href="#"
+                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                        role="menuitem" tabindex="-1" id="menu-item-1">Blog-3 Column</a>
+                                    <a href="#"
+                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                        role="menuitem" tabindex="-1" id="menu-item-2">Blog- Left Sidebar</a>
+                                    <a href="#"
+                                        class="text-gray-700 block px-4 py-2 text-sm w-max hover:bg-gray-100 font-medium"
+                                        role="menuitem" tabindex="-1" id="menu-item-3">Blog- Right Sidebar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative inline-block text-left">
+                            <div>
+                                <button type="button"
+                                    class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                    id="menu-button-7" aria-expanded="true" aria-haspopup="true">
+                                    BLOG DETAILS
+                                    <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="origin-top-right absolute -right-72 -top-4 mt-2 w-52 bg-white  focus:outline-none hidden z-50"
+                                id="menu-items-7" role="menu" aria-orientation="vertical"
+                                aria-labelledby="menu-button-7" tabindex="-1">
+                                <div class="py-1 pl-2" role="none">
+                                    <a href="./Blog-2-Column.html" target="_blank"
+                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                        role="menuitem" tabindex="-1" id="menu-item-0">Blog Details- Left Sidebar</a>
+                                    <a href="#"
+                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                        role="menuitem" tabindex="-1" id="menu-item-1">Blog Details- Right Sidebar</a>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative inline-block text-left">
+                            <div>
+                                <button type="button"
+                                    class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                    id="menu-button-6" aria-expanded="true" aria-haspopup="true">
+                                    ACCOUNTS
+                                    <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="origin-top-right absolute -right-64 -top-4 mt-2 w-40 bg-white  focus:outline-none hidden z-50"
+                                id="menu-items-6" role="menu" aria-orientation="vertical"
+                                aria-labelledby="menu-button-6" tabindex="-1">
+                                <div class="py-1 pl-3" role="none">
+                                    <a href="./Login.html" target="_blank"
+                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                        role="menuitem" tabindex="-1" id="menu-item-0">Login</a>
+                                    <a href="Sign-up.html" target="_blank"
+                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                        role="menuitem" tabindex="-1" id="menu-item-1">Signup</a>
+                                    <a href="#"
+                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                        role="menuitem" tabindex="-1" id="menu-item-1">Reset Password</a>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./Reviews.html" target="_blank" class="flex items-center text-sm px-4 py-2 text-gray-800 hover:bg-gray-200">
+                            REVIEWS
+                        </a>
+                        <a href="Faq.html" target="_blank" class="flex items-center text-sm px-4 py-2 text-gray-800 hover:bg-gray-200">
+                            FAQ
+                        </a>
+                        <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 hover:bg-gray-200">
+                            CONTACT
+                        </a>
+                        <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 hover:bg-gray-200">
+                            MORE COMING SOON
+                        </a>
+                    </div>
+                </div>
+                <a href="" class="text-lg">Screenshots</a>
+                <a href="" class="text-lg">Pricing</a>
+                <a href="" class="text-lg">Contact</a>
+            </div>
+            <div class="lg:hidden flex items-center">
+                <button class="mobile-menu-button outline-none focus:outline-none">
+                    <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <div
+                class="lg:hidden fixed inset-0 bg-white bg-opacity-75 z-50 transform transition-transform ease-in-out duration-300 translate-x-full mobile-menu">
+                <div
+                    class="mobile-view fixed overflow-auto inset-y-0 right-0 flex flex-col pt-12 w-72 bg-white z-50">
+                    <button class="close-mobile-menu absolute top-4 right-4 text-gray-600 rounded-lg p-2">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <div class="relative group px-6 py-3 border-b-2">
+                        <a href="#" class="text-lg text-gray-600">Home <i
+                                class="fa-solid fa-angle-down"></i></a>
+                        <div class=" left-0 mt-2 w-48 bg-white hidden group-hover:block">
+                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+
+                                Homepage-1
+                            </a>
+                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+
+                                Homepage-2
+                            </a>
+                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+
+                                Homepage-3
+                            </a>
+                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+
+                                Homepage-4
+                            </a>
+                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+
+                                Homepage-5
+                            </a>
+                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+
+                                Homepage-6
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="py-3 px-6 text-gray-600 text-lg font-normal border-b-2">Features</a>
+                    <div class="relative group py-3 px-6 border-b-2">
+                        <a href="#" class="text-lg text-gray-800">Pages
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="left-0 mt-2 w-52 bg-white hidden group-hover:block">
+                            <div class="relative group">
+                                <div class="relative inline-block text-left">
+                                    <div>
+                                        <button type="button"
+                                            class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                            id="menu-button-1" aria-expanded="true" aria-haspopup="true">
+                                            INNER PAGE
+                                            <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="origin-top-right relative right-0 mt-2 w-56  bg-white r ring-black ring-opacity-5 focus:outline-none hidden z-50"
+                                        id="menu-items-1" role="menu" aria-orientation="vertical"
+                                        aria-labelledby="menu-button-1" tabindex="-1">
+                                        <div class="py-1 pl-3" role="none">
+                                            <a href="./Blog-2-Column.html" target="_blank"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-0">Pricing<a>
+                                            <a href="#"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-1">Download
+                                                </a>
+                                            <a href="#"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-2">Newsletter</a>
+                                            <a href="#"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-3">Thank You</a>
+                                            <a href="#"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-3">Coming Soon</a>
+                                            <a href="#"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-3">404</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative group">
+                                <div class="relative inline-block text-left">
+                                    <div>
+                                        <button type="button"
+                                            class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                            id="menu-button-2" aria-expanded="true" aria-haspopup="true">
+                                            BLOG PAGES
+                                            <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="origin-top-right relative right-0 mt-2 w-56  bg-white r ring-black ring-opacity-5 focus:outline-none hidden z-50"
+                                        id="menu-items-2" role="menu" aria-orientation="vertical"
+                                        aria-labelledby="menu-button-2" tabindex="-1">
+                                        <div class="py-1 pl-3" role="none">
+                                            <a href="./Blog-2-Column.html" target="_blank"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-0">Blog-2 Column</a>
+                                            <a href="#"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-1">Blog- 3
+                                                Column</a>
+                                            <a href="#"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-2">Blog- Left
+                                                Sidebar</a>
+                                            <a href="#"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-3">Blog- Right
+                                                Sidebar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative group">
+                                <div class="relative inline-block text-left">
+                                    <div>
+                                        <button type="button"
+                                            class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                            id="menu-button-3" aria-expanded="true" aria-haspopup="true">
+                                            BLOG DETAILS
+                                            <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="origin-top-right relative right-0 mt-2 w-56  bg-white  focus:outline-none hidden z-50"
+                                        id="menu-items-3" role="menu" aria-orientation="vertical"
+                                        aria-labelledby="menu-button-3" tabindex="-1">
+                                        <div class="py-1 pl-3" role="none">
+                                            <a href="#"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-0">Blog Details-
+                                                Left Sidebar </a>
+                                            <a href="#"
+                                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                role="menuitem" tabindex="-1" id="menu-item-1">Blog Details-
+                                                Right Sidebar</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative inline-block text-left">
+                                <div>
+                                    <button type="button"
+                                        class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md   focus:outline-none "
+                                        id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                        ACCOUNTS
+                                        <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="origin-top-right relative right-0 mt-2 w-56 bg-white  focus:outline-none hidden"
+                                    id="menu-items" role="menu" aria-orientation="vertical"
+                                    aria-labelledby="menu-button" tabindex="-1">
+                                    <div class="py-1 pl-3" role="none">
+                                        <a href="./Login.html" target="_blank"
+                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                            role="menuitem" tabindex="-1" id="menu-item-0">Login</a>
+                                        <a href="./Sign-up.html" target="_blank"
+                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                            role="menuitem" tabindex="-1" id="menu-item-1">Signup</a>
+                                        <a href="#"
+                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                            role="menuitem" tabindex="-1" id="menu-item-2">Reset Password</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 ">
+                                REVIEWS
+                            </a>
+                            <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 ">
+                                FAQ
+                            </a>
+                            <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 ">
+                                CONTACT
+                            </a>
+                            <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 ">
+                                MORE COMING SOON
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="py-3 px-6 text-gray-600 text-lg font-normal border-b-2">Screenshots</a>
+                    <a href="#" class="py-3 px-6 text-gray-600 text-lg font-normal border-b-2">Price</a>
+                    <a href="#" class="py-3 px-6 text-gray-600 text-lg font-normal border-b-2">Contact</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+
+        <div class="container mx-auto p-4">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-semibold text-white text-center"> Blog - 2 Column</h1>
+            <h1 class="mt-5 text-lg md:text-xl font-medium text-center text-white">
+                Home > Blog Pages > Blog - 2 Column
+            </h1>
+        </div>
+
+
+
+    </div>
+
+    <div class="blog-pages flex justify-center items-center">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 w-full md:w-1/2">
+                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="w-full object-cover object-center" src="./Assets/blog-1.jpg" alt="blog">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-base title-font font-medium mb-1">By Anna Sword</h2>
+                                <h1 class="title-font text-base font-normal mb-3">Feb 05, 2022</h1>
+                            </div>
+                            <h1 class="font-bold text-2xl hover:text-purple-600">How to grow up your business</h1>
+                            <p class="leading-relaxed mt-3 mb-3 text-lg">It is a long established fact that a reader
+                                will be distracted by the readable content of a page when looking at its layout. The
+                                point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+                            <div class="flex items-center flex-wrap">
+                                <a class="text-black text-lg font-medium inline-flex items-center md:mb-2 lg:mb-0">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 w-full md:w-1/2">
+                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="w-full object-cover object-center" src="./Assets/blog-2.jpg" alt="blog">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-base title-font font-medium mb-1">By Jassica William</h2>
+                                <h1 class="title-font text-base font-normal mb-3">Feb 05, 2022</h1>
+                            </div>
+                            <h1 class="font-bold text-2xl hover:text-purple-600">Planning to manage your clients?</h1>
+                            <p class="leading-relaxed mt-3 mb-3 text-lg">Contrary to popular belief, Lorem Ipsum is not
+                                simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                                making it over 2000 years old. Richard McClintock, a Latin professor.</p>
+                            <div class="flex items-center flex-wrap">
+                                <a class="text-black text-lg font-medium inline-flex items-center md:mb-2 lg:mb-0">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 w-full md:w-1/2">
+                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="w-full object-cover object-center" src="./Assets/blog-3.jpg" alt="blog">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-base title-font font-medium mb-1">By John Doe</h2>
+                                <h1 class="title-font text-base font-normal mb-3">March 05, 2022</h1>
+                            </div>
+                            <h1 class="font-bold text-2xl hover:text-purple-600">Make your successful business with sApp
+                            </h1>
+                            <p class="leading-relaxed mt-3 mb-3 text-lg">There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered alteration in some form, by injected
+                                humour, or randomised words which don't look even slightly believable. If you are going
+                                to use a passage.</p>
+                            <div class="flex items-center flex-wrap">
+                                <a class="text-black text-lg font-medium inline-flex items-center md:mb-2 lg:mb-0">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 w-full md:w-1/2">
+                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="w-full object-cover object-center" src="./Assets/blog-4.jpg" alt="blog">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-base title-font font-medium mb-1">By Anna Sword</h2>
+                                <h1 class="title-font text-base font-normal mb-3">Feb 05, 2022</h1>
+                            </div>
+                            <h1 class="font-bold text-2xl hover:text-purple-600">How to get more clients?</h1>
+                            <p class="leading-relaxed mt-3 mb-3 text-lg">Need to be sure there isn't anything
+                                embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                                Internet tend to repeat predefined chunks as necessary, making this the first true
+                                generator on the Internet.</p>
+                            <div class="flex items-center flex-wrap">
+                                <a class="text-black text-lg font-medium inline-flex items-center md:mb-2 lg:mb-0">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 w-full md:w-1/2">
+                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="w-full object-cover object-center" src="./Assets/blog-5.jpg" alt="blog">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-base title-font font-medium mb-1">By Jassica William</h2>
+                                <h1 class="title-font text-base font-normal mb-3">Feb 05, 2022</h1>
+                            </div>
+                            <h1 class="font-bold text-2xl hover:text-purple-600">Grow up your business successfully</h1>
+                            <p class="leading-relaxed mt-3 mb-3 text-lg">Contrary to popular belief, Lorem Ipsum is not
+                                simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                                making it over 2000 years old. Richard McClintock, a Latin professor.</p>
+                            <div class="flex items-center flex-wrap">
+                                <a class="text-black text-lg font-medium inline-flex items-center md:mb-2 lg:mb-0">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 w-full md:w-1/2">
+                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="w-full object-cover object-center" src="./Assets/blog-6.jpg" alt="blog">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-base title-font font-medium mb-1">By John Doe</h2>
+                                <h1 class="title-font text-base font-normal mb-3">Mar 05, 2022</h1>
+                            </div>
+                            <h1 class="font-bold text-2xl hover:text-purple-600">Meet the business magnet of the year
+                            </h1>
+                            <p class="leading-relaxed mt-3 mb-3 text-lg">There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered alteration in some form, by injected
+                                humour, or randomised words which don't look even slightly</p>
+                            <div class="flex items-center flex-wrap">
+                                <a class="text-black text-lg font-medium inline-flex items-center md:mb-2 lg:mb-0">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="numbering flex justify-center mt-5 items-center gap-3">
+                <i class="fa-solid fa-arrow-left cursor-pointer"></i>
+                <div class="border-2 p-1 pl-3 pr-3 border-black cursor-pointer">1</div>
+                <div class="border-2 p-1 pl-3 pr-3 border-black cursor-pointer">2</div>
+                <div class="border-2 p-1 pl-3 pr-3 border-black cursor-pointer">3</div>
+                <i class="fa-solid fa-arrow-right cursor-pointer"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="bg-blue-100 flex justify-center items-center py-8">
+        <div class="logo mt-10 md:mt-28 flex items-center justify-center flex-col text-center">
+            <img src="./Assets/White-logo.png" alt="">
+            <h1 class="mt-3 max-w-md mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit
+                totam vel laboriosam vitae.</h1>
+            <div class="programs flex md:flex-row flex-col gap-4 mt-6 justify-center">
+                <h1 class="hover:text-purple-600 cursor-pointer font-normal">Affiliate program</h1>
+                <h1 class="font-normal hover:text-purple-600 cursor-pointer">Terms & Conditions</h1>
+                <h1 class="font-normal hover:text-purple-600 cursor-pointer">Privacy Policy</h1>
+                <h1 class="font-normal hover:text-purple-600 cursor-pointer">Refund Policy</h1>
+            </div>
+            <div class="themeland mt-4 mb-10 md:mb-20">
+                Made with By <span class="hover:text-purple-600 cursor-pointer">Themeland</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script>
+
+
+        // Mobile-menu
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        const closeBtn = document.querySelector('.close-mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('translate-x-0');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.remove('translate-x-0');
+        })
+
+        // const dropdown = document.querySelector('.relative');
+        // dropdown.addEventListener('mouseenter', function () {
+        //     this.querySelector('.hidden').classList.remove('hidden');
+        // });
+        // dropdown.addEventListener('mouseleave', function () {
+        //     this.querySelector('.hidden').classList.add('hidden');
+        // });
+
+
+        //  For Account dropdown
+
+
+        document.getElementById('menu-button').addEventListener('click', function () {
+            document.getElementById('menu-items').classList.toggle('hidden');
+        });
+
+        // For Inner Page
+        document.getElementById('menu-button-1').addEventListener('click', function() {
+        const menu = document.getElementById('menu-items-1');
+        menu.classList.toggle('hidden');
+        });
+
+        // For Blog pages
+
+        document.getElementById('menu-button-2').addEventListener('click', function () {
+            document.getElementById('menu-items-2').classList.toggle('hidden');
+        });
+
+        // For Blog Details
+
+        document.getElementById('menu-button-3').addEventListener('click', function () {
+            document.getElementById('menu-items-3').classList.toggle('hidden');
+        });
+
+        // For Large Inner
+
+        document.getElementById('menu-button-4').addEventListener('click', function () {
+            document.getElementById('menu-items-4').classList.toggle('hidden');
+        });
+
+
+        //  For Blog
+        document.getElementById('menu-button-5').addEventListener('click', function () {
+            document.getElementById('menu-items-5').classList.toggle('hidden');
+        });
+
+        //  For Blog Details
+        document.getElementById('menu-button-6').addEventListener('click', function () {
+            document.getElementById('menu-items-6').classList.toggle('hidden');
+        });
+
+        //  For Accounts
+        document.getElementById('menu-button-7').addEventListener('click', function () {
+            document.getElementById('menu-items-7').classList.toggle('hidden');
+        });
+    </script>
+
+
+
+</body>
+
+</html>

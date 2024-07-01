@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+  <br><br>
+  <h1 class="text-4xl font-semibold line-through text-center">Roshaan Ali</h1>
+  <br><br>
+  <div class="columns-2">
+    <p>My name is Roshaan Ali</p>
+    <p class="break-before-auto">I am nineteen years old</p>
+    <p>My name is Roshaan Ali</p>
+  </div>
+  <br><br>
+
+  <div class="hover:break-after-column">
+    <p>My name is Roshaan Ali</p>
+  </div>
+  <br><br>
+
+
+  <span class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">
+    Hello<br />
+    World
+  </span>
+  <br>
+  <span class="bg-gradient-to-tr from-red-600 to-lime-500 text-white px-3 py*3">Roshaan Ali</span>
+  <br>
+
+  <div class="grid grid-cols-12 grid-rows-5 gap-10">
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+    <div class="bg-purple-600 text-center text-white">1</div>
+
+  </div>
+  <br><br>
+  <div class="table w-full">
+    <div class="table-header-group">
+      <div class="table-cell">Name</div>
+      <div class="table-cell">Class</div>
+      <div class="table-cell">Roll No</div>
+    </div>
+    <div class="table-row-group">
+      <div class="table-cell">Roshaan Ali</div>
+      <div class="table-cell">3rd Year</div>
+      <div class="table-cell">F23-5105</div>
+    </div>
+    <div class="table-row-group">
+      <div class="table-cell">Mahnoor Imran</div>
+      <div class="table-cell">3rd Year</div>
+      <div class="table-cell">F23-5105</div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+
+
+
+  <img src="./Assets/WhatsApp Image 2023-12-27 at 01.57.20.jpeg" alt="" class="float-right h-96 w-96 object-cover">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi provident consectetur sapiente, reprehenderit magnam
+    aperiam eligendi alias amet eum quos labore culpa, fugiat maxime. Incidunt reiciendis facere nobis doloremque quas.
+  </p>
+  <br><br><br><br><br>
+  <img src="./Assets/WhatsApp Image 2023-12-27 at 01.57.20.jpeg" alt="" class="float-left h-96 w-96 object-cover">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi provident consectetur sapiente, reprehenderit magnam
+    aperiam eligendi alias amet eum quos labore culpa, fugiat maxime. Incidunt reiciendis facere nobis doloremque quas.
+  </p>
+  <br><br><br><br><br>
+
+
+
+  <div class="flex flex-row">
+    <div class="basis-1/4 bg-purple-500">1</div>
+    <div class="basis-1/4 bg-red-500">2</div>
+    <div class="basis-1/2 bg-blue-500">3</div>
+  </div>
+
+
+
+  <br><br><br><br><br>
+  <div class="flex justify-between">
+    <div class="order-last bg-purple-800 text-center">1</div>
+    <div class="bg-red-500 text-center">2</div>
+    <div class="bg-blue-500 text-center">3</div>
+  </div>
+  <br><br><br><br>
+  <p class="oldstyle-nums text-2xl">1234567890</p>
+
+  <br><br><br><br>
+
+
+
+  <div class="bg-scroll bg-clip-border blur-0 text-white"
+    style="background-image: url(./Assets/WhatsApp\ Image\ 2023-12-27\ at\ 01.57.17.jpeg);">Lorem
+    ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde iure architecto repellat maiores ullam, quasi
+    iusto? Facilis minus incidunt sapiente impedit ad voluptates perferendis, accusamus tempora, cumque cum iure
+    officiis a dolorem. Culpa dolorum, nihil iusto officiis eius impedit porro facilis exercitationem maiores dolorem
+    illum eos sit distinctio sunt nemo incidunt rerum aut sapiente tempore amet, dolor voluptate quas similique.
+    Molestiae, repellendus doloremque asperiores nulla dignissimos nisi eius necessitatibus id assumenda rem ab? Soluta
+    ducimus maxime eius quidem aut optio vel, nam quas asperiores, possimus, vitae esse amet rerum. Quisquam labore,
+    officiis eaque quia veniam officia ullam sit, assumenda sint esse recusandae blanditiis facilis quasi ipsum
+    architecto debitis numquam temporibus unde nobis quidem. Distinctio quis voluptates amet provident excepturi totam
+    consectetur cupiditate expedita perspiciatis quasi fugiat pariatur ipsa, assumenda magni qui? Quo sint nemo maiores
+    illum asperiores temporibus excepturi iure deleniti perspiciatis rerum quam quis repellat unde non omnis facilis,
+    ratione accusantium voluptatem dolore voluptatum velit nostrum sequi ad minus. Praesentium dolore placeat
+    repellendus iure quisquam illo optio delectus vel, nesciunt mollitia pariatur labore sit sapiente, quaerat suscipit
+    quam ipsa omnis aliquam velit esse ea repudiandae voluptate minima iste. Provident, dolore? Placeat totam doloremque
+    beatae velit dolores ipsum nobis illo officia impedit, quod quos nemo. Illo at architecto ut quo quis quae sequi
+    rem, voluptates numquam deserunt doloremque porro. Tempore voluptates nam architecto numquam in quo, minus voluptate
+    et explicabo dolore excepturi mollitia, voluptatem optio soluta temporibus deleniti inventore modi quod perspiciatis
+    facilis consectetur. In esse libero corporis accusantium dicta excepturi dolorem unde aut cum quibusdam fugiat odio
+    repellat, ducimus maiores laboriosam hic commodi reprehenderit modi optio molestiae. Minus neque repellat facere
+    ullam at molestias beatae provident, laborum, harum dignissimos atque velit quisquam facilis recusandae officiis.
+  </div>
+
+  <br><br><br><br><br>
+  <div class="text-5xl font-extrabold ...">
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+      Hello world
+    </span>
+  </div>
+  <br><br><br><br><br>
+
+
+
+  <div class="bg-red-500 w-96 h-96 rounded-full border-double">1</div>
+
+
+  <button class="bg-indigo-500 shadow-lg shadow-indigo-500/50 ...">Subscribe</button>
+
+
+  <div class="flex justify-center -space-x-14">
+    <div class="mix-blend-multiply bg-blue-400 w-9 ...">1</div>
+    <div class="mix-blend-multiply bg-pink-400 w-9 ...">2</div>
+  </div>
+  <br><br><br><br><br>
+  <button
+    class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+    Save Changes
+  </button>
+
+  <br><br><br><br>
+  <span class="relative flex h-3 w-3">
+    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+    <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+  </span><br><br><br><br><br><br><br><br><br><br>
+
+
+  <label for="">
+    <input type="checkbox" class="accent-pink-700">Customised
+  </label>
+  <label>
+    <input type="checkbox" class="accent-pink-500" checked> Customized
+  </label>
+
+  <textarea class="caret-green-800 rounded-md"></textarea>\
+  <svg class="stroke-cyan-500 ...">
+    <!-- ... -->
+  </svg>
+
+
+
+
+  
+</body>
+
+</html>
+
+
+<!-- <nav>
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex space-x-4">
+                        <div>
+                            <a href="#" class="flex items-center py-5 px-2 text-gray-700">
+                                <img src="./Assets/logo-white.png" alt="logo-white">
+                            </a>
+                        </div>
+                    </div>
+
+                     Primary Navbar items 
+                    <div class="hidden lg:flex items-center space-x-1 ">
+                        <a href="#" class="py-5 px-3 text-white text-base font-medium">Home</a>
+                        <a href="#" class="py-5 px-3 text-white text-base font-medium">Features</a>
+                        <a href="#" class="py-5 px-3 text-white text-base font-medium">Pages</a>
+                        <a href="#" class="py-5 px-3 text-white text-base font-medium">Screenshots</a>
+                        <a href="#" class="py-5 px-3 text-white text-base font-medium">Price</a>
+                        <a href="#" class="py-5 px-3 text-white text-base font-medium">Contact</a>
+
+                    </div>
+
+
+                    <div class="lg:hidden flex items-center">
+                        <button class="mobile-menu-button">
+                            <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-menu hidden lg:hidden">
+                <a href="#" class="block py-5 px-3 text-white text-base font-medium">Home</a>
+                <a href="#" class=" block py-5 px-3 text-white text-base font-medium">Features</a>
+                <a href="#" class=" block py-5 px-3 text-white text-base font-medium">Pages</a>
+                <a href="#" class="block py-5 px-3 text-white text-base font-medium">Screenshots</a>
+                <a href="#" class="block py-5 px-3 text-white text-base font-medium">Price</a>
+                <a href="#" class="block py-5 px-3 text-white text-base font-medium">Contact</a>
+            </div>
+        </nav>  -->

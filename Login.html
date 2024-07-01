@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sApp - App Landing Page | Login</title>
+    <link rel="shortcut icon" href="./Assets/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/9f6775670c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'custom-blue': '#4d30da',
+                        'custom-purple': '#853be6',
+                    }
+                }
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="w-full 
+    mb-20
+    h-1/2
+    flex
+    items-center
+    justify-center
+    mt-auto
+    relative
+    overflow-hidden
+    z-10
+    bg-[url('https://theme-land.com/sapp/demo/assets/img/bg/accounts.jpg')]
+    bg-cover
+    bg-no-repeat
+    bg-center
+    before:content-['']
+    before:absolute
+    before:inset-0
+    before:block
+    before:bg-gradient-to-br
+    before:from-custom-blue
+    before:to-custom-purple
+    before:opacity-95
+    before:z-[-5]
+">
+        <div class="relative overflow-hidden">
+            <nav class="absolute top-0 w-full z-50">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="flex justify-between items-center py-4">
+                        <div class="flex space-x-4">
+                            <div>
+                                <a href="./Project.html" class="flex items-center py-2 px-2 text-gray-700">
+                                    <img src="./Assets/logo-white.png" alt="logo-white">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav-side lg:flex text-white hidden items-center gap-9 font-semibold">
+                            <div class="container ">
+                                <div class="flex justify-between items-center">
+                                    <div class="relative group ">
+                                        <a href="#" class="text-lg flex items-center gap-1 justify-center">Home <i
+                                                class="fa-solid fa-angle-down mt-1"></i></a>
+                                        <div
+                                            class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden group-hover:block">
+                                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+    
+                                                Homepage-1
+                                            </a>
+                                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+    
+                                                Homepage-2
+                                            </a>
+                                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+    
+                                                Homepage-3
+                                            </a>
+                                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+    
+                                                Homepage-4
+                                            </a>
+                                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+    
+                                                Homepage-5
+                                            </a>
+                                            <a href="#" class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200">
+    
+                                                Homepage-6
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="text-lg">Features</a>
+                            <div class="relative group">
+                                <a href="#" class="text-lg flex items-center gap-1 justify-center">Pages <i
+                                        class="fa-solid fa-angle-down mt-1"></i></a></a>
+                                <div
+                                    class="absolute left-0 mt-2 w-52 bg-white rounded-md shadow-lg hidden group-hover:block">
+                                    <div class="relative group">
+                                        <div class="relative inline-block text-left">
+                                            <div>
+                                                <button type="button"
+                                                    class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                                    id="menu-button-5" aria-expanded="true" aria-haspopup="true">
+                                                    INNER PAGES
+                                                    <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                        <path fill-rule="evenodd"
+                                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+    
+                                            <div class="origin-top-right absolute -right-60 -top-4 mt-2 w-40 bg-white  focus:outline-none hidden z-50"
+                                                id="menu-items-5" role="menu" aria-orientation="vertical"
+                                                aria-labelledby="menu-button-5" tabindex="-1">
+                                                <div class="py-1 pl-3" role="none">
+                                                    <a href="#"
+                                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                        role="menuitem" tabindex="-1" id="menu-item-0">Pricing</a>
+                                                    <a href="#"
+                                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                        role="menuitem" tabindex="-1" id="menu-item-1">Download</a>
+                                                    <a href="#"
+                                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                        role="menuitem" tabindex="-1" id="menu-item-2">Newsletter</a>
+                                                    <a href="#"
+                                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                        role="menuitem" tabindex="-1" id="menu-item-3">Thank You</a>
+                                                    <a href="#"
+                                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                        role="menuitem" tabindex="-1" id="menu-item-3">Coming Soon</a>
+                                                    <a href="#"
+                                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                        role="menuitem" tabindex="-1" id="menu-item-3">404</a>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                    <div class="relative inline-block text-left">
+                                        <div>
+                                            <button type="button"
+                                                class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                                id="menu-button-4" aria-expanded="true" aria-haspopup="true">
+                                                BLOG PAGES
+                                                <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd"
+                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </button>
+                                        </div>
+    
+                                        <div class="origin-top-right absolute -right-60 -top-4 mt-2 w-40 bg-white  focus:outline-none hidden z-50"
+                                            id="menu-items-4" role="menu" aria-orientation="vertical"
+                                            aria-labelledby="menu-button-4" tabindex="-1">
+                                            <div class="py-1 pl-2" role="none">
+                                                <a href="./Blog-2-Column.html" target="_blank"
+                                                    class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                    role="menuitem" tabindex="-1" id="menu-item-0">Blog-2 Column</a>
+                                                <a href="#"
+                                                    class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                    role="menuitem" tabindex="-1" id="menu-item-1">Blog-3 Column</a>
+                                                <a href="#"
+                                                    class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                    role="menuitem" tabindex="-1" id="menu-item-2">Blog- Left Sidebar</a>
+                                                <a href="#"
+                                                    class="text-gray-700 block px-4 py-2 text-sm w-max hover:bg-gray-100 font-medium"
+                                                    role="menuitem" tabindex="-1" id="menu-item-3">Blog- Right Sidebar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="relative inline-block text-left">
+                                        <div>
+                                            <button type="button"
+                                                class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                                id="menu-button-7" aria-expanded="true" aria-haspopup="true">
+                                                BLOG DETAILS
+                                                <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd"
+                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </button>
+                                        </div>
+    
+                                        <div class="origin-top-right absolute -right-72 -top-4 mt-2 w-52 bg-white  focus:outline-none hidden z-50"
+                                            id="menu-items-7" role="menu" aria-orientation="vertical"
+                                            aria-labelledby="menu-button-7" tabindex="-1">
+                                            <div class="py-1 pl-2" role="none">
+                                                <a href="./Blog-2-Column.html" target="_blank"
+                                                    class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                    role="menuitem" tabindex="-1" id="menu-item-0">Blog Details- Left Sidebar</a>
+                                                <a href="#"
+                                                    class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                    role="menuitem" tabindex="-1" id="menu-item-1">Blog Details- Right Sidebar</a>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="relative inline-block text-left">
+                                        <div>
+                                            <button type="button"
+                                                class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                                id="menu-button-6" aria-expanded="true" aria-haspopup="true">
+                                                ACCOUNTS
+                                                <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd"
+                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </button>
+                                        </div>
+    
+                                        <div class="origin-top-right absolute -right-64 -top-4 mt-2 w-40 bg-white  focus:outline-none hidden z-50"
+                                            id="menu-items-6" role="menu" aria-orientation="vertical"
+                                            aria-labelledby="menu-button-6" tabindex="-1">
+                                            <div class="py-1 pl-3" role="none">
+                                                <a href="./Login.html" target="_blank"
+                                                    class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                    role="menuitem" tabindex="-1" id="menu-item-0">Login</a>
+                                                <a href="Sign-up.html" target="_blank"
+                                                    class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                    role="menuitem" tabindex="-1" id="menu-item-1">Signup</a>
+                                                <a href="#"
+                                                    class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                    role="menuitem" tabindex="-1" id="menu-item-1">Reset Password</a>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="./Reviews.html" target="_blank" class="flex items-center text-sm px-4 py-2 text-gray-800 hover:bg-gray-200">
+                                        REVIEWS
+                                    </a>
+                                    <a href="Faq.html" target="_blank" class="flex items-center text-sm px-4 py-2 text-gray-800 hover:bg-gray-200">
+                                        FAQ
+                                    </a>
+                                    <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 hover:bg-gray-200">
+                                        CONTACT
+                                    </a>
+                                    <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 hover:bg-gray-200">
+                                        MORE COMING SOON
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="" class="text-lg">Screenshots</a>
+                            <a href="" class="text-lg">Pricing</a>
+                            <a href="" class="text-lg">Contact</a>
+                        </div>
+                        <div class="lg:hidden flex items-center">
+                            <button class="mobile-menu-button outline-none focus:outline-none">
+                                <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </button>
+                        </div>
+    
+                        <div
+                            class="lg:hidden fixed inset-0 bg-white bg-opacity-75 z-50 transform transition-transform ease-in-out duration-300 translate-x-full mobile-menu">
+                            <div
+                                class="mobile-view fixed overflow-auto inset-y-0 right-0 flex flex-col pt-12 w-72 bg-white z-50">
+                                <button class="close-mobile-menu absolute top-4 right-4 text-gray-600 rounded-lg p-2">
+                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                                <div class="relative group px-6 py-3 border-b-2">
+                                    <a href="#" class="text-lg text-gray-600">Home <i
+                                            class="fa-solid fa-angle-down"></i></a>
+                                    <div class=" left-0 mt-2 w-48 bg-white hidden group-hover:block">
+                                        <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+    
+                                            Homepage-1
+                                        </a>
+                                        <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+    
+                                            Homepage-2
+                                        </a>
+                                        <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+    
+                                            Homepage-3
+                                        </a>
+                                        <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+    
+                                            Homepage-4
+                                        </a>
+                                        <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+    
+                                            Homepage-5
+                                        </a>
+                                        <a href="#" class="flex items-center px-4 py-2 text-gray-800 font-medium ">
+    
+                                            Homepage-6
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="py-3 px-6 text-gray-600 text-lg font-normal border-b-2">Features</a>
+                                <div class="relative group py-3 px-6 border-b-2">
+                                    <a href="#" class="text-lg text-gray-800">Pages
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <div class="left-0 mt-2 w-52 bg-white hidden group-hover:block">
+                                        <div class="relative group">
+                                            <div class="relative inline-block text-left">
+                                                <div>
+                                                    <button type="button"
+                                                        class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                                        id="menu-button-1" aria-expanded="true" aria-haspopup="true">
+                                                        INNER PAGE
+                                                        <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                            <path fill-rule="evenodd"
+                                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                                clip-rule="evenodd" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+    
+                                                <div class="origin-top-right relative right-0 mt-2 w-56  bg-white r ring-black ring-opacity-5 focus:outline-none hidden z-50"
+                                                    id="menu-items-1" role="menu" aria-orientation="vertical"
+                                                    aria-labelledby="menu-button-1" tabindex="-1">
+                                                    <div class="py-1 pl-3" role="none">
+                                                        <a href="./Blog-2-Column.html" target="_blank"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-0">Pricing<a>
+                                                        <a href="#"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-1">Download
+                                                            </a>
+                                                        <a href="#"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-2">Newsletter</a>
+                                                        <a href="#"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-3">Thank You</a>
+                                                        <a href="#"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-3">Coming Soon</a>
+                                                        <a href="#"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-3">404</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="relative group">
+                                            <div class="relative inline-block text-left">
+                                                <div>
+                                                    <button type="button"
+                                                        class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                                        id="menu-button-2" aria-expanded="true" aria-haspopup="true">
+                                                        BLOG PAGES
+                                                        <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                            <path fill-rule="evenodd"
+                                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                                clip-rule="evenodd" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+    
+                                                <div class="origin-top-right relative right-0 mt-2 w-56  bg-white r ring-black ring-opacity-5 focus:outline-none hidden z-50"
+                                                    id="menu-items-2" role="menu" aria-orientation="vertical"
+                                                    aria-labelledby="menu-button-2" tabindex="-1">
+                                                    <div class="py-1 pl-3" role="none">
+                                                        <a href="./Blog-2-Column.html" target="_blank"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-0">Blog-2 Column</a>
+                                                        <a href="#"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-1">Blog- 3
+                                                            Column</a>
+                                                        <a href="#"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-2">Blog- Left
+                                                            Sidebar</a>
+                                                        <a href="#"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-3">Blog- Right
+                                                            Sidebar</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="relative group">
+                                            <div class="relative inline-block text-left">
+                                                <div>
+                                                    <button type="button"
+                                                        class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md  focus:outline-none  cursor-pointer"
+                                                        id="menu-button-3" aria-expanded="true" aria-haspopup="true">
+                                                        BLOG DETAILS
+                                                        <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                            <path fill-rule="evenodd"
+                                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                                clip-rule="evenodd" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+    
+                                                <div class="origin-top-right relative right-0 mt-2 w-56  bg-white  focus:outline-none hidden z-50"
+                                                    id="menu-items-3" role="menu" aria-orientation="vertical"
+                                                    aria-labelledby="menu-button-3" tabindex="-1">
+                                                    <div class="py-1 pl-3" role="none">
+                                                        <a href="#"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-0">Blog Details-
+                                                            Left Sidebar </a>
+                                                        <a href="#"
+                                                            class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                            role="menuitem" tabindex="-1" id="menu-item-1">Blog Details-
+                                                            Right Sidebar</a>
+    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="relative inline-block text-left">
+                                            <div>
+                                                <button type="button"
+                                                    class="flex items-center text-sm px-4 py-2 text-gray-800 bg-white rounded-md   focus:outline-none "
+                                                    id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                                    ACCOUNTS
+                                                    <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                        <path fill-rule="evenodd"
+                                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+    
+                                            <div class="origin-top-right relative right-0 mt-2 w-56 bg-white  focus:outline-none hidden"
+                                                id="menu-items" role="menu" aria-orientation="vertical"
+                                                aria-labelledby="menu-button" tabindex="-1">
+                                                <div class="py-1 pl-3" role="none">
+                                                    <a href="./Login.html" target="_blank"
+                                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                        role="menuitem" tabindex="-1" id="menu-item-0">Login</a>
+                                                    <a href="./Sign-up.html" target="_blank"
+                                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                        role="menuitem" tabindex="-1" id="menu-item-1">Signup</a>
+                                                    <a href="#"
+                                                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 font-medium"
+                                                        role="menuitem" tabindex="-1" id="menu-item-2">Reset Password</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 ">
+                                            REVIEWS
+                                        </a>
+                                        <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 ">
+                                            FAQ
+                                        </a>
+                                        <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 ">
+                                            CONTACT
+                                        </a>
+                                        <a href="#" class="flex items-center text-sm px-4 py-2 text-gray-800 ">
+                                            MORE COMING SOON
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="py-3 px-6 text-gray-600 text-lg font-normal border-b-2">Screenshots</a>
+                                <a href="#" class="py-3 px-6 text-gray-600 text-lg font-normal border-b-2">Price</a>
+                                <a href="#" class="py-3 px-6 text-gray-600 text-lg font-normal border-b-2">Contact</a>
+                            </div>
+    
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </nav>
+            <div class="container mx-auto px-4 py-5 relative">
+                <div class="flex flex-col md:flex-row items-center md:mt-20 mt-20 lg:gap-28 xl:px-16 relative z-10 md:mb-10">
+                    <div class="md:w-1/2 lg:w-1/2 text-center md:text-left lg:basis-3/5">
+                        <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-bold mb-4">Welcome Back!</h1>
+                        <p class="text-white mb-6">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:basis-2/5  bg-white rounded-lg p-8 mt-10 md:mt-0 relative z-10 shadow-md">
+                        <h2 class="text-gray-900 text-2xl mb-1 font-semibold title-font text-center">Sign In</h2>
+                        <p class="leading-relaxed mb-5 text-gray-600 text-center">Fill all fields so we can get some info about you. We'll never send you spam</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center  rounded-md shadow-sm">
+                                <div class="p-3">
+                                    <i class="fa-solid fa-envelope-open bg-gray-200 p-3 border-r-0 border-2 border-gray-400"></i>
+                                </div>
+                                <input type="email" class="flex-grow pl-4 pr-4 py-2 bg-white border-none rounded-md focus:outline-none" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex items-center  rounded-md shadow-sm">
+                                <div class="p-3">
+                                    <i class="fa-solid fa-lock-open bg-gray-200 p-3 border-r-0 border-2 border-gray-400"></i>
+                                </div>
+                                <input type="password" class="flex-grow pl-4 pr-4 py-2 bg-white border-none rounded-md focus:outline-none" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <input type="checkbox" class="mr-2" >
+                            <label class="text-gray-600 font-normal">By signing up, you accept our <span class="underline"> Terms</span> & <span class="underline">Privacy Policy </span></label>
+                        </div>
+                        <button class="text-white bg-indigo-500 border-0 py-4 px-6 w-full font-semibold rounded text-lg">Sign Up</button>
+                        <p class="text-center mt-5 border-t pt-5">Don't have an account? <a href="#" class="text-purple-600 hover:underline">Sign in</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="absolute -bottom-1 w-full z-0">
+            <svg viewBox="0 0 1920 310" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" class="svg replaced-svg text-white">
+                <title>sApp Shape</title>
+                <desc>Created with Sketch</desc>
+                <g id="sApp-Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="sApp-v1.0" transform="translate(0.000000, -554.000000)" fill="#FFFFFF">
+                        <path
+                            d="M-3,551 C186.257589,757.321118 319.044414,856.322454 395.360475,848.004007 C509.834566,835.526337 561.525143,796.329212 637.731734,765.961549 C713.938325,735.593886 816.980646,681.910577 1035.72208,733.065469 C1254.46351,784.220361 1511.54925,678.92359 1539.40808,662.398665 C1567.2669,645.87374 1660.9143,591.478574 1773.19378,597.641868 C1848.04677,601.75073 1901.75645,588.357675 1934.32284,557.462704 L1934.32284,863.183395 L-3,863.183395">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+
+        // Mobile-menu
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        const closeBtn = document.querySelector('.close-mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('translate-x-0');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.remove('translate-x-0');
+        })
+
+        // const dropdown = document.querySelector('.relative');
+        // dropdown.addEventListener('mouseenter', function () {
+        //     this.querySelector('.hidden').classList.remove('hidden');
+        // });
+        // dropdown.addEventListener('mouseleave', function () {
+        //     this.querySelector('.hidden').classList.add('hidden');
+        // });
+
+
+        //  For Account dropdown
+
+
+        document.getElementById('menu-button').addEventListener('click', function () {
+            document.getElementById('menu-items').classList.toggle('hidden');
+        });
+
+        // For Inner Page
+        document.getElementById('menu-button-1').addEventListener('click', function() {
+        const menu = document.getElementById('menu-items-1');
+        menu.classList.toggle('hidden');
+        });
+
+        // For Blog pages
+
+        document.getElementById('menu-button-2').addEventListener('click', function () {
+            document.getElementById('menu-items-2').classList.toggle('hidden');
+        });
+
+        // For Blog Details
+
+        document.getElementById('menu-button-3').addEventListener('click', function () {
+            document.getElementById('menu-items-3').classList.toggle('hidden');
+        });
+
+        // For Large Inner
+
+        document.getElementById('menu-button-4').addEventListener('click', function () {
+            document.getElementById('menu-items-4').classList.toggle('hidden');
+        });
+
+
+        //  For Blog
+        document.getElementById('menu-button-5').addEventListener('click', function () {
+            document.getElementById('menu-items-5').classList.toggle('hidden');
+        });
+
+        //  For Blog Details
+        document.getElementById('menu-button-6').addEventListener('click', function () {
+            document.getElementById('menu-items-6').classList.toggle('hidden');
+        });
+
+        //  For Accounts
+        document.getElementById('menu-button-7').addEventListener('click', function () {
+            document.getElementById('menu-items-7').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
